@@ -35,7 +35,7 @@ layout: default
     {% for logo in site.static_files %}
     {% if logo.path contains "/home/logo" %}
     <div class="col-3">
-        <img src="{{ logo.path }}" alt="logos" class="img-fluid">
+        <img src="{{ logo.path | relative_url }}" alt="logos" class="img-fluid">
     </div>
     {% endif %}
     {% endfor %}
