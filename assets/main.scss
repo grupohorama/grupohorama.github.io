@@ -1,0 +1,21 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "css/bootstrap.min.css";
+@import "css/fontawesome.min.css";
+@import "css/solid.min.css";
+@import "css/brands.min.css";
+@import "home.scss";
+@import "page.scss";
+@import "header.scss";
+@import "remote.scss";
+
+body {
+    color:#7a7a7a;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}

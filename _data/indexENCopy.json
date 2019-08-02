@@ -1,0 +1,35 @@
+{
+    "hero":{
+        "title":"Database Administration 24×7",
+        "content":"100% Specialized database administration."
+    },
+    "introduction": {
+        "content":"Grupo Horama offers a wide range of services including database administration and security, O/S optimization, middle-tier support and advanced monitoring and forecasting. All services are provided 100% on-demand directly from our 24x7x365 Global Operations Center."
+    },
+    "services": [
+        {
+            "title":"Remote DBA Services",
+            "content":"Horama provides secure 24×7, 100% reliable remote database administration services for Oracle and Cloud database environments."
+        },
+        {
+            "title":"Database Security Services",
+            "content":"Horama’s Database Security service helps customers protect their most valuable and sensitive data from internal, external and intra-database threats."
+        },
+        {
+            "title":"OS Services",
+            "content":"Horama’s Operating System services are architected to ensure customers’ server environments are cost-effective, highly available and exceeds performance expectations."
+        },
+        {
+            "title":"Monitoring Services",
+            "content":"Horama’s monitoring services help your organization proactively predict, analyze and prevent database availability and performance problems."
+        },
+        {
+            "title":"GoldenGate Services",
+            "content":"Horama’s GoldenGate support services allow customers to fully leverage the benefits of one of the industry’s leading heterogeneous replication architectures."
+        },
+        {
+            "title":"Supplemental DBA Service",
+            "content":"We augment your in-house DBA(s), freeing them for projects and high-profile initiatives. You choose a service package that is specifically tailored to support your in-house DBAs."
+        }
+    ]
+}

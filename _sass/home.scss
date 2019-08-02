@@ -1,0 +1,15 @@
+.hero {
+    color: white;
+    &>.jumbotron {
+        background-image: url('home/hero.jpeg');
+        min-height: 430px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.introduction, .logos {
+    margin: 5vh 0 5vh;
+}

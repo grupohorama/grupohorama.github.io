@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <h1 class="h1">{{site.data.indexENCopy.hero.title}}</h1>
+            <p class="lead">{{site.data.indexENCopy.hero.content}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="introduction container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <p class="h3">{{ site.data.indexENCopy.introduction.content }}</p>
+    </div>
+  </div>
+</section>
+<section class="services container-fluid">
+  <div class="row">
+    {% for service in site.data.indexENCopy.services %}
+    <article class='{{service.title | replace: " ", "_" | downcase }} col-4'>
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.content }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="logos container-fluid">
+  <div class="row align-items-center">
+    {% for logo in site.static_files %}
+    {% if logo.path contains "/home/logo" %}
+    <div class="col-3">
+        <img src="{{ logo.path }}" alt="logos" class="img-fluid">
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
