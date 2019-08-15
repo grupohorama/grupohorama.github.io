@@ -1,5 +1,6 @@
 .hero {
     color: white;
+
     &>.jumbotron {
         background-image: url('home/hero.jpeg');
         min-height: 430px;
@@ -7,6 +8,10 @@
         background-size: cover;
         display: flex;
         align-items: center;
+
+        & h1 {
+            color: white;
+        }
     }
 }
 
