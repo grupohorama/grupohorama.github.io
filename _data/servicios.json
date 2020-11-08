@@ -1,0 +1,26 @@
+{
+    "0": {
+        "titulo": "Auditorias de seguridad",
+        "descripcion": "Grupo Horama sigue los lineamientos de Oracle. Entendemos la seguridad de las bases de datos Oracle y tenemos procedimientos propios de auditorias de seguridad para encontrar vulnerabilidades rápido.",
+        "imagen": "/assets/images/services/security.png",
+        "imagen2x": "/assets/images/services/security@2x.png"
+    },
+    "1": {
+        "titulo": "Implementación",
+        "descripcion": "Implementar bases de datos Oracle es un proceso difícil y riesgoso. Los expertos sugieren que la mejor forma de asegurarse el éxito de una implementación de base de datos, es hacerlo con el acompañamiento de un equipo confiable de proveedores de servicios, cuyos miembros saben y pueden llevar a cabo un proyecto en tiempo y forma.",
+        "imagen": "/assets/images/services/implementacion.png",
+        "imagen2x": "/assets/images/services/implementacion@2x.png"
+    },
+    "2": {
+        "titulo": "Administración de RAC",
+        "descripcion": "RAC (Real Application Cluster) es una tecnología compleja que permite tener alta disponibilidad de las instancias de base de datos. En Grupo Horama tenemos vasta experiencia en esta tecnología, su implementación y su puesta a punto.",
+        "imagen": "/assets/images/services/oracleRAC.png",
+        "imagen2x": "/assets/images/services/oracleRAC@2x.png"
+    },
+    "3": {
+        "titulo": "Administración de instancias stand-alone",
+        "descripcion": "A menudo, nuestros clientes prefieren tener un equipo offsite que tenga profundos conocimientos y provea la misma atención al detalle que un equipo onsite. Grupo Horama ofrece servicios de DBA Remoto donde instalamos, actualizamos su software de base de datos, tuneamos sus bases existentes y diseñamos e implementamos nuevas instancias para que puedan ser usadas por sus aplicativos.",
+        "imagen": "/assets/images/services/man-working-1200.png",
+        "imagen2x": "/assets/images/services/man-working-1200@2x.png"
+    }
+}

@@ -1,0 +1,25 @@
+<div class="content">
+    <div class="header">
+        <span>Nuestros servicios</span>
+        <hr class="underHeader">
+    </div>
+    {% for service in site.data.servicios %}
+    {% assign parOImpar = service[0] | modulo: 2 %}
+    {% if parOImpar == 0 %}
+    {% assign serviceBackgroundClass = 'leftService' %}
+    {% else %}
+    {% assign serviceBackgroundClass = 'rightService' %}
+    {% endif %}
+    <article class="{{serviceBackgroundClass}}">
+        <span>{{service[1].titulo}}</span>
+        <p>{{service[1].descripcion}}</p>
+        <img src="{{service[1].imagen}}" alt="{{service[1].titulo}}" srcset="{{service[1].imagen2x}}">
+    </article>
+    {% endfor %}
+    <div class="servicesCTA">
+        <span>Ofrecemos estos servicios y mucho más.</span>
+        <p>Contáctenos y un jefe de cuenta se pondrá a su disposición.</p>
+        <a href="/contacto" class="button">Contáctenos</a>
+        <img src="/assets/images/services/salesteam.png" alt="Equipo de ventas">
+    </div>
+</div>

@@ -1,0 +1,13 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// @import "minima";
+@import "fonts/_normalize";
+@import "styles/reset";
+@import "styles/globalStyles";
+@import "styles/home";
+@import "styles/header";
+@import "styles/footer";
+@import "styles/services";
+@import "styles/contactus";

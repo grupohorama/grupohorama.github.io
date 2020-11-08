@@ -1,0 +1,293 @@
+.wrapper>div>section {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    max-width: 100vw;
+    grid-template-areas:
+        ". content content content content content content content content content content content content  .";
+        
+    .content {
+        grid-area: content;
+        position: relative;
+    }
+}
+
+.page-content {
+    &>.wrapper {
+        &>div {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: stretch;
+            
+            &>.home {
+                grid-template-rows: 100vh repeat(4, minmax(61.75vh, 1fr)) auto;
+                grid-template-areas: 
+                "hero"
+                "availablePro"
+                "worldwideAvailability"
+                "monitoring"
+                "homeContactCTA"
+                "footer";
+            }
+        }
+    }
+}
+
+.header {
+    font-size: $section-header-size;
+    font-weight: $semi-bold;
+    width: 100%;
+    min-height: 11.133603238866396vh;
+
+    @media only screen and (max-width:56.25em) {
+        &>.underHeader{
+            width: 25%;
+        }
+    }
+}
+
+section.hero {
+    background-image: url('/assets/images/home/hero/background.png');
+    background-size: cover;
+    grid-area: hero;
+    position: relative;
+    z-index: 0;
+    
+    .heroTitle {
+        width: 36.45555555vw;
+        padding-top: 31.01851851851852vh;
+        
+        strong {
+            font-size: $h1-font-size;
+        }
+    }
+
+    a {
+        font-size: 1.750rem;
+        margin-top: 9.2592vh;
+        display: inline-block;
+        text-decoration: none;
+        padding: 1.563rem 3.375rem;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    @media only screen and (max-width:56.25em) {
+        .heroTitle {
+            width: 80vw;
+            word-break: break-all;
+        }
+    }
+}
+    
+section.availablePro {
+    grid-area: availablePro;
+    background: radial-gradient(circle, $white, #808080);
+    
+    &>.content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        padding: 5.092592592592593vh 0;
+        row-gap: 2.5925925925925926vh;
+
+        & .header {
+            grid-area: 1 / 1 / 1 / auto;
+        }
+
+        section {
+            img {
+                min-width: 3.073vw;
+                height: 5.9716vh;
+                margin-bottom: 4.048582995951417vh;
+            }
+            h3 {
+                margin-bottom: 4.048582995951417vh;
+                font-size: 1.875rem;
+                font-weight: $medium;
+            }
+            p {
+                font-size: 1.25rem;
+                font-weight: $medium;
+                
+            }
+        }
+        
+        section.availableBackup {
+            grid-area: 2 / 1 / 2 / span 4;
+        }
+        section.availableIdentity {
+            grid-area: 2 / 5 / 2 / span 4;
+        }
+        section.availableHA {
+            grid-area: 2 / 9 / 2 / span 4;
+        }
+    }
+
+    @media only screen and (max-width:56.25em) {
+        &>.content {
+            & .header {
+                grid-area: 1 / 1 / 1 / 12;
+            }
+            section.availableBackup {
+                grid-area: 2 / 1 / 2 / 12;
+            }
+            section.availableIdentity {
+                grid-area: 3 / 1 / 3 / 12;
+            }
+            section.availableHA {
+                grid-area: 4 / 1 / 4 / 12;
+            }
+        }
+    }
+}
+
+section.worldwideAvailability {
+    grid-area: worldwideAvailability;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0)), url('/assets/images/home/worldwideAvailability/Background-1.png');
+    background-size: cover;
+
+
+    &>.content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        padding: 5.092592592592593vh 0;
+        row-gap: 2.5925925925925926vh;
+
+        & .header {
+            grid-area: 1 / 1 / 1 / span 4;
+        }
+
+        & p {
+            grid-area: 2 / 1 / 2 / span 4;
+            font-size: 1.875rem;
+            line-height: 3.4375rem;
+        }
+    }
+
+    @media only screen and (max-width:56.25em) {
+        &>.content {
+            & .header {
+                grid-area: 1 / 1 / 1 / span 12;
+            }
+    
+            & p {
+                grid-area: 2 / 1 / 2 / span 12;
+            }
+        }
+    }
+}
+
+section.monitoring {
+    grid-area: monitoring;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(255,255,255,1)), url('/assets/images/home/monitoring/Background-2.png');
+    background-size: cover;
+
+    &>.content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        min-width: 0;
+        padding: 5.092592592592593vh 0;
+        row-gap: 2.5925925925925926vh;
+
+        & .header {
+            grid-area: 1 / 9 / 1 / span 4;
+            width: 100%;
+        }
+
+        & p {
+            grid-area: 2 / 9 / 2 / span 4;
+            width: 100%;
+            font-size: 1.875rem;
+            line-height: 3.4375rem;
+        }
+    }
+
+    @media only screen and (max-width:56.25em) {
+        &>.content {
+            & .header {
+                grid-area: 1 / 1 / 1 / span 12;
+                width: unset;
+            }
+    
+            & p {
+                grid-area: 2 / 1 / 2 / span 12;
+            }
+        }
+    }
+}
+
+section.homeContactCTA {
+    grid-area: homeContactCTA;
+    background: url('/assets/images/home/homeContactCTA/homeContactCTA.png');
+    background-size: cover;
+    position: relative;
+    grid-template-columns: unset;
+
+    & .content {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        width: 100%;
+        row-gap: 79px;
+        justify-content: center;
+        align-content: center;
+        padding: 18.796296296296294vh 18.906vw;
+        box-sizing: border-box;
+
+        header {
+            grid-area: 1 / 1 / 1 / 12;
+            font-size: 3.0625rem;
+            font-weight: $extra-bold;
+        }
+        .copy {
+            grid-area: 2 / 1 / 2 / span 7;
+            font-size: 2.1875rem;
+        }
+
+        .button {
+            grid-area: 2 / 8 / 2 / span 4;
+            font-size: 1.75rem;
+            opacity: 1;
+            padding: 2.314814814814815vh 6.302vw;
+            margin-left: 1.719vw;
+            text-decoration: none;
+        }
+    }
+
+    @media only screen and (max-width:56.25em) {
+        &>.content {
+            header {
+                grid-area: 1 / 1 / 1 / 12;
+            }
+            .copy {
+                grid-area: 2 / 1 / 2 / 12;
+            }
+    
+            .button {
+                grid-area: 3 / 1 / 3 / 12;
+            }
+        }
+    }
+}
+
+section.homeContactCTA::before {
+    position: absolute;
+    background-color: rgba(255,228,99,0.85);
+    height: 100%;
+    width: 100%;
+    content: ' ';
+    display: block;
+}
+
+
+
+.site-footer{
+    background-color: red;
+}

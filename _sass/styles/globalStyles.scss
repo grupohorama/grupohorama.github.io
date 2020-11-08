@@ -1,0 +1,81 @@
+$h1-font-size: 4.625em;
+$section-header-size: 2.6875rem;
+$black: #000;
+$white: #fff;
+$gray: #C9C7C7;
+$primary: #FFE463;
+$baseEms: 1600;
+$semi-bold: 600;
+$medium: 500;
+$extra-bold: 800;
+
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+.white {
+    color: $white;
+}
+
+strong {
+    font-weight: $semi-bold;
+}
+
+.page-content {
+    &>.wrapper>div {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: stretch;
+    }
+}
+
+.page-content {
+    &>.wrapper>div.home {
+        grid-template-rows: 100vh repeat(4, minmax(61.75vh, 1fr)) auto;
+        grid-template-areas: 
+            "hero"
+            "availablePro"
+            "worldwideAvailability"
+            "monitoring"
+            "homeContactCTA"
+            "footer";
+    }
+}
+
+
+.button {
+    background-color: $black;
+    opacity: 0.7;
+    border: 1px solid $primary;
+    color: $primary;
+    border-radius: 6px;
+}
+
+.alignRight {
+    text-align: right;
+
+    hr {
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+.underHeader {
+    grid-area: hr;
+    border-top: 9px solid yellow;
+    width: 5.286vw;
+    margin-left: 0;
+    margin-top: 2.5925925925925926vh;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+

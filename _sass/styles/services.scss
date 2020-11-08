@@ -1,0 +1,93 @@
+section.services {
+    background-image: url('/assets/images/services/dot-grid.png');
+    background-repeat: repeat;
+
+    &>.content{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 5.25vh;
+        &>.header {
+            padding-top: 31.01851851851852vh;
+        }
+        article {
+            display: grid;
+            &.leftService {
+                grid-template-columns: auto 20.469vw;
+                grid-template-areas: 
+                    "titulo imagen"
+                    "descripcion imagen";
+            }
+            &.rightService {
+                grid-template-columns: 20.469vw auto;
+                grid-template-areas: 
+                    "imagen titulo"
+                    "imagen descripcion";
+                position: relative;
+                
+                span, p {
+                    text-align: right;
+                    color: white;
+                    z-index: 1;
+                    padding: 0.9259259259259258vh 0.781vw 0 0;
+                }
+
+                &::before {
+                    content: ' ';
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(to left, #3A3A3A, rgba(116, 116, 116, 0.03));
+                }
+            }
+
+            &>span {
+                grid-area: titulo;
+                font-size: 2.25rem;
+                font-weight: $semi-bold;
+            }
+            &>p {
+                grid-area: descripcion;
+                font-size: 1.5rem;
+                font-weight: $medium;
+                line-height: 3.4259259259259256vh;
+            }
+            &>img {
+                grid-area: imagen;
+                max-width: 20.469vw;
+                z-index: 1;
+            }
+        }
+        .servicesCTA {
+            display: grid;
+            grid-template-areas: 
+                "servicesCTAHeader servicesCTAImage"
+                "servicesCTACopy servicesCTAImage"
+                "servicesCTAButton servicesCTAImage";
+            
+            span {
+                grid-area: servicesCTAHeader;
+                font-size: 2.6875rem;
+                font-weight: $semi-bold;
+            }
+            p {
+                grid-area: servicesCTACopy;
+                font-size: 1.9375rem;
+                font-weight: $semi-bold;
+            }
+            img {
+                grid-area: servicesCTAImage;
+                justify-self: end;
+            }
+            a.button {
+                grid-area: servicesCTAButton;
+                justify-self: center;
+                align-self: center;
+                font-size: 1.75rem;
+                opacity: 1;
+                padding: 2.314814814814815vh 6.302vw;
+                margin-left: 1.719vw;
+                text-decoration: none;
+            }
+        }
+    }
+}
